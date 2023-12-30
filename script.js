@@ -11,27 +11,27 @@ if (city === 'Kyiv') {
     country = 'England';
 } 
 if (city === 'Kyiv' || city === 'Washington' || city === 'London') {
-    messageofcountry = 'You live in the capital of  ' + country  + ' ;';
+    messageofcountry = 'You live in the capital of  ' +  country + ';';
 } else {
-    messageofcountry = 'You live in the   ' + city + ' ;';
+    messageofcountry = 'You live in the ' + city + ' ;';
 }
 
 if (sport === 'Football') {
-    messageofsport = '  Cool! Do you want to become Ronaldo?';
+    messageofsport = 'Cool! Do you want to become Ronaldo ?';
 } else if (sport === 'Basketball') {
-    messageofsport = '  Cool! Do you want to become Michael Jordan?';
+    messageofsport = 'Cool! Do you want to become Michael Jordan?';
 } else if (sport === 'Skiing') {
-    messageofsport = '  Cool! Do you want to become Franz Klammer?';
+    messageofsport = 'Cool! Do you want to become Franz Klammer?';
 }
 
-if (databirth === null || databirth===0 ) {
-    alert(messageofcountry + ' Its a pity that you didnt want to enter your(s) data of birth ' + messageofsport);
+if (databirth === null || databirth === 0) {
+    alert(`${messageofcountry}\n${'Its a pity that you didnt want to enter your(s) data of birth'}\n${messageofsport}`);
 } else if (city === null) {
-    alert('Its a pity that you didnt want to enter your(s) city:( ' + '  Your age: ' + age + ' ;' + messageofsport);
+    alert(`${'Its a pity that you didnt want to enter your(s) city:( '}\n${'Your age: '}${age}\n${messageofsport}`);
 } else if (sport === null) {
-    alert(messageofcountry + '  Your age: ' + age + ' ;' + 'Its a pity that you didnt want to enter your(s) favourite sport:( ');
+    alert(`${messageofcountry}\n${'Your age: '}${age}\n${'Its a pity that you didnt want to enter your(s) favourite sport:( '}`);
 } else {
-    alert(messageofcountry + 'Your age: ' + age + ';' + messageofsport);
+    alert(`${messageofcountry}\n${'Your age: '}${age}\n${messageofsport}`);
 }
 
 
